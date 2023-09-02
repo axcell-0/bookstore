@@ -1,10 +1,9 @@
-import React from 'react';
-import PropTypes from 'prop-types';
 import { Button } from 'react-bootstrap';
 import './Book.css';
+import PropTypes from 'prop-types';
 
 const Book = ({
-  title, author, category, onRemove,
+  item_id, title, author, category, onRemove,
 }) => (
   <div className="book-container p-4 border">
     <div>
@@ -21,15 +20,16 @@ const Book = ({
                 <div className="book-buttons-container mt-3">
                   <Button variant="light text-primary">Comments</Button>
                   <span className="mx-1">|</span>
-                  <Button variant="light text-primary" onClick={onRemove}>Remove</Button>
+                  <Button variant="light text-primary" onClick={() => onRemove(item_id)}>
+                    Remove
+                  </Button>
                   <span className="mx-1">|</span>
                   <Button variant="light text-primary">Edit</Button>
                 </div>
               </div>
+
               <div className="graphic-progress d-flex align-items-center gap-1 mr-2">
-                <div
-                  className="circular-progress"
-                />
+                <div className="circular-progress" />
                 <div className="progress-number d-flex flex-column align-items-center justify-content-center">
                   <span>64%</span>
                   <span>Completed</span>
@@ -48,7 +48,9 @@ const Book = ({
     </div>
   </div>
 );
+
 Book.propTypes = {
+  item_id: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   author: PropTypes.string.isRequired,
   category: PropTypes.string.isRequired,
