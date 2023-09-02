@@ -37,7 +37,7 @@ const Book = ({
                 </div>
               </div>
               <div className="vr" />
-              <div className="current-chapter d-flex flex-column justify-content-center gap-1">
+              <div className="current-chapter d-flex flex-column justify-content-center gap-1 pe-5">
                 <span className="gray">Current Chapter</span>
                 <span>Chapter 17</span>
                 <Button variant="btn btn-primary mt-2">Update progress</Button>

@@ -60,7 +60,7 @@ const AddBook = () => {
         </Col>
         {errorMessage && <div className="text-danger error-message">{errorMessage}</div>}
         <Col md={2}>
-          <Button variant="primary px-4" size="lg" block onClick={handleAddBook}>
+          <Button variant="primary px-4 btn-lg" size="lg" block onClick={handleAddBook}>
             Add Book
           </Button>
         </Col>

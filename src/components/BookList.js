@@ -31,7 +31,7 @@ const BookList = () => {
   }
 
   return (
-    <div>
+    <div className="bg-white">
       {books.map((book) => (
         <div className="mb-3" key={book.item_id}>
           <Book

@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 import { User } from 'react-feather';
 
 const Navbar = () => (
-  <nav className="navbar navbar-expand-lg navbar-light bg-light">
+  <nav className="navbar navbar-expand-lg navbar-light bg-white">
     <div className="container ">
       <h1 className="text-primary">Bookstore CMS</h1>
       <div className="collapse navbar-collapse">
