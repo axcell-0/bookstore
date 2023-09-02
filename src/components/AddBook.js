@@ -59,8 +59,8 @@ const AddBook = () => {
           />
         </Col>
         {errorMessage && <div className="text-danger error-message">{errorMessage}</div>}
-        <Col md={2}>
-          <Button variant="primary px-4 btn-lg" size="lg" block onClick={handleAddBook}>
+        <Col className="px-3 ms-4">
+          <Button className="btn-lg" variant="primary btn-lg" size="lg" block onClick={handleAddBook}>
             Add Book
           </Button>
         </Col>
