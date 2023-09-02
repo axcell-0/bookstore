@@ -4,6 +4,7 @@ import {
 } from 'react-bootstrap';
 import { useDispatch } from 'react-redux';
 import { addBook, fetchBooks } from '../redux/books/booksSlice';
+import './Book.css';
 
 const AddBook = () => {
   const dispatch = useDispatch();
@@ -59,7 +60,7 @@ const AddBook = () => {
           />
         </Col>
         {errorMessage && <div className="text-danger error-message">{errorMessage}</div>}
-        <Col className="px-3 ms-4">
+        <Col className="ms-2">
           <Button className="btn-lg" variant="primary btn-lg" size="lg" block onClick={handleAddBook}>
             Add Book
           </Button>
